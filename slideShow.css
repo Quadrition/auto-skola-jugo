@@ -10,3 +10,8 @@
 .OpisKategorije {
   width: 50%;
 }
+
+.footer {
+  background-image: url("car-blue.jpg");
+  background-size: 100% 100%;
+}
