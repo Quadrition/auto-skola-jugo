@@ -5,45 +5,26 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-      integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX"
-      crossorigin="anonymous"
-    />
+
+    <!-- CSS load -->
+    <link rel="stylesheet" href="./css/bootstrap-material-design.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+
+    <!-- Material Design Icons -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
-      integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"
-      integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-      crossorigin="anonymous"
-    ></script>
-	<link rel="stylesheet" type="text/css" href="slideShow.css">
-    <script>
-      $(document).ready(function() {
-        $("body").bootstrapMaterialDesign();
-      });
-    </script>
+
+    <title>Auto skola Jugo | Kontakt</title>
   </head>
   <body>
     <nav
       class="navbar navbar-expand-lg sticky-top navbar-dark"
-      style="background-color: #2B7BC2;"
+      style="background-color: #114B9C;"
     >
-      <a class="navbar-brand" href="#">
-        <img src="favicon.png" alt="" width="50" height="50" />
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/images/favicon.png" alt="" width="50" height="50" />
       </a>
       <button
         class="navbar-toggler"
@@ -60,12 +41,12 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="index.html"
               >Početna <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">O nama</a>
+            <a class="nav-link" href="learning.html">Obuka</a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -80,14 +61,25 @@
               Kategorije
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="B_Kategorija.html">B kategorija</a>
+              <a class="dropdown-item" href="categoryB.html">B kategorija</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="C_Kategorija.html">C kategorija</a>
-              <a class="dropdown-item" href="CE_Kategorija.html">CE kategorija</a>
+              <a class="dropdown-item" href="categoryC.html">C kategorija</a>
+              <a class="dropdown-item" href="categoryCE.html"
+                >CE kategorija</a
+              >
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Prijava</a>
+            <a class="nav-link" href="probationary.html">Probna dozvola</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conditioned.html">Kondiciona vožnja</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="apply.html">Prijava</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Kontakt</a>
           </li>
         </ul>
         <ul
@@ -96,7 +88,11 @@
         >
           <li class="nav-item mr-2">
             <a href="https://www.instagram.com/auto.skola.jugo/"
-              ><img src="instagram.png" alt="" width="50" height="50"
+              ><img
+                src="./assets/images/instagram.png"
+                alt=""
+                width="50"
+                height="50"
             /></a>
           </li>
           <li class="nav-item">
@@ -104,57 +100,52 @@
               ><i class="material-icons mr-1" style="vertical-align: middle;">
                 phone
               </i>
-              +381 63 322425</a
+              +381 63 322 425</a
             >
           </li>
         </ul>
       </div>
     </nav>
+	
 	<div class ="divTest" align = "center">
-		<div id="carouselExampleFade" class="carousel slide" data-ride="carousel" data-interval="3000">			
-		  <div class="carousel-inner">
-			<div class="carousel-item active">
-			  <img class="d-block w-100" width="100%" height="100%" src="bgTest.jpg" alt="First slide">
-			  <div class="carousel-caption d-none d-md-block">
-				<h1>Slika Kamiona</h1>
-				<p>Opis CE kategorije</p>
-			  </div>
-			</div>			
-		  </div>		  
-		</div>
 		<div class = "OpisKategorije" align = "left">
 			<br><br>
-			<p>
-				Skup vozila čije vučno vozilo pripada kategoriji C, a najveća dozvoljena masa priključnog vozila je veća od 750 kg spada u vozila CE .
-			</p>
-			<p>
-				Za polaganje CE kategorije je potrebno:
-			</p>
-			<p>
-				– lična karta, lekarsko uverenje i vozačka dozvola C kategorije
-			</p>
-			<p>
-				– obuka koja se sastoji od 7 praktičnih časova
-			</p>
-			<p>
-				– polaganje praktičnog ispita
-			</p>
-			<p>
-				Kandidati koji poseduju vozačku dozvolu C1E kategorije ne vrše obuku, već samo polažu praktični ispit za vozače CE kategorije.
-			</p>
-			
+			<h2>Pošaljite nam poruku</h2>
+			<br><br>
+			<form>
+			  <div class="form-group">
+				<label for="exampleInputEmail1" class="bmd-label-floating">Email adresa</label>
+				<input type="email" class="form-control" id="exampleInputEmail1">
+				<span class="bmd-help">We'll never share your email with anyone else.</span>
+			  </div>
+			  <div class="form-group">
+				<label for="exampleInputPassword1" class="bmd-label-floating">Naslov poruke</label>
+				<input type="text" class="form-control" id="exampleInputPassword1">
+			  </div>			  			 
+			  <div class="form-group">
+				<label for="exampleTextarea" class="bmd-label-floating">Poruka</label>
+				<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+			  </div>			  
+			  <button type="submit" class="btn btn-primary btn-raised">Pošaljite</button>
+			</form>
 			<br><br>
 		</div>
+		
 		<footer class="footer">
-        <div class="container pt-3 pb-1 text-white">
+        <div class="container pt-3 text-white">
           <div class="row justify-content-center">
             <div
               class="col-md-5 d-none d-md-block text-center my-auto border-right"
             >
-              <img src="logo.jpg" alt="" width="200" height="200" />
+              <img
+                src="./assets/images/logo.jpg"
+                alt=""
+                width="200"
+                height="200"
+              />
               <p class="mt-3">Copyright &copy; 2020 | Binple</p>
             </div>
-            <div class="col-md-4" align="left">
+            <div class="col-md-4">
               <p class="h2"><ins> Auto škola Jugo</ins></p>
               <br />
               <p>
@@ -178,7 +169,11 @@
               </p>
               <p>
                 <a href="https://www.instagram.com/auto.skola.jugo/"
-                  ><img src="instagram.png" alt="" width="40" height="40"
+                  ><img
+                    src="./assets/images/instagram.png"
+                    alt=""
+                    width="40"
+                    height="40"
                 /></a>
               </p>
             </div>
@@ -186,5 +181,13 @@
         </div>
       </footer>
 	</div>
+	<script src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap-material-design.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("body").bootstrapMaterialDesign();
+      });
+    </script>
   </body>
 </html>
