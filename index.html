@@ -202,12 +202,14 @@
         <!-- 3 main marketing features in 1 row -->
         <div class="text-white p-2" style="background-color: #2B7BC2;">
           <div class="container">
-            <div class="row mt-3">
+            <div class="row mt-3" id="counter">
               <div class="col-md-4">
                 <i class="material-icons" style="font-size: 100px;">
                   people
                 </i>
-                <h2>14000+</h2>
+                <h2>
+                  <span class="counter-value" data-count="14000">0</span>&plus;
+                </h2>
                 <p>
                   ZADOVOLJNIH KANDIDATA
                 </p>
@@ -216,7 +218,9 @@
                 <i class="material-icons" style="font-size: 100px;">
                   date_range
                 </i>
-                <h2>40</h2>
+                <h2 class="counter-value" data-count="40">
+                  0
+                </h2>
                 <p>
                   GODINA SA VAMA
                 </p>
@@ -225,7 +229,7 @@
                 <i class="material-icons" style="font-size: 100px;">
                   access_time
                 </i>
-                <h2>3</h2>
+                <h2 class="counter-value" data-count="3">0</h2>
                 <p>
                   MESECA DO DOZVOLE
                 </p>
@@ -446,7 +450,7 @@
     </main>
 
     <!-- Libraries (jQuery, Popper, Bootstrap JS -->
-    <script src="./js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/jquery-3.2.1.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap-material-design.js"></script>
     <script>
@@ -454,8 +458,7 @@
         $("body").bootstrapMaterialDesign();
       });
     </script>
-
     <!-- Increment -->
-    <script src="./js/increment.js"></script>
+    <script src="./js/incrementer.js"></script>
   </body>
 </html>
