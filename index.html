@@ -9,6 +9,7 @@
 
     <!-- CSS load -->
     <link rel="stylesheet" href="./css/bootstrap-material-design.min.css" />
+    <link href="./css/aos.css" rel="stylesheet" />
 
     <!-- Tab icon -->
     <link rel="icon" href="./assets/images/favicontab.png" />
@@ -172,7 +173,7 @@
 
       <div class="text-center mt-5">
         <!-- Title and first paragraph, about page-->
-        <div class="container mb-4">
+        <div class="container mb-4" data-aos="zoom-in">
           <h1>
             Auto škola
             <span class="rounded p-1" style="background-color: #2B7BC2;"
@@ -199,7 +200,7 @@
         <div class="text-white p-2" style="background-color: #2B7BC2;">
           <div class="container">
             <div class="row mt-3" id="counter">
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="flip-left">
                 <i class="material-icons" style="font-size: 100px;">
                   people
                 </i>
@@ -210,7 +211,7 @@
                   ZADOVOLJNIH KANDIDATA
                 </p>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="flip-right">
                 <i class="material-icons" style="font-size: 100px;">
                   date_range
                 </i>
@@ -221,7 +222,7 @@
                   GODINA SA VAMA
                 </p>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4" data-aos="flip-up">
                 <i class="material-icons" style="font-size: 100px;">
                   access_time
                 </i>
@@ -246,7 +247,7 @@
           </p>
           <br />
           <div class="row">
-            <div class="col-md-7 order-md-1">
+            <div class="col-md-7 order-md-1" data-aos="fade-down-right">
               <i class="material-icons" style="font-size: 100px;">
                 library_books
               </i>
@@ -259,7 +260,7 @@
                 Svaki naš kandidat postaje siguran, uspešan i bezbedan vozac
               </p>
             </div>
-            <div class="col-md-5 order-md-2">
+            <div class="col-md-5 order-md-2" data-aos="fade-down-left">
               <i class="material-icons" style="font-size: 100px;">
                 access_time
               </i>
@@ -275,7 +276,7 @@
             </div>
           </div>
           <div class="row mt-4">
-            <div class="col-md-7 order-md-1">
+            <div class="col-md-7 order-md-1" data-aos="fade-up-right">
               <i class="material-icons" style="font-size: 100px;">
                 verified_user
               </i>
@@ -288,7 +289,7 @@
                 Obuku naših kandidata vrše obrazovani i licencirani instruktori
               </p>
             </div>
-            <div class="col-md-5 order-md-2">
+            <div class="col-md-5 order-md-2" data-aos="fade-up-left">
               <i class="material-icons" style="font-size: 100px;">
                 attach_money
               </i>
@@ -306,7 +307,7 @@
           <hr />
 
           <!-- Conditional driving -->
-          <div class="container pb-4 pt-4">
+          <div class="container pb-4 pt-4" data-aos="fade-right">
             <p class="h1">Kondiciona vožnja</p>
             <br /><br />
             <p>
@@ -320,7 +321,7 @@
           <hr />
 
           <!-- Feature for submit enterance -->
-          <div class="alert alert-info" role="alert">
+          <div class="alert alert-info" data-aos="fade-left" role="alert">
             <div class="my-5">
               <span class="h1 mx-1">Upis se vrši konstantno!</span>
               <br />
@@ -426,10 +427,12 @@
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap-material-design.js"></script>
+    <script src="./js/aos.js"></script>
     <script>
       $(document).ready(function() {
         $("body").bootstrapMaterialDesign();
       });
+      AOS.init();
     </script>
     <!-- Increment -->
     <script src="./js/incrementer.js"></script>

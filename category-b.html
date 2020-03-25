@@ -9,6 +9,7 @@
 
     <!-- CSS load -->
     <link rel="stylesheet" href="./css/bootstrap-material-design.min.css" />
+    <link href="./css/aos.css" rel="stylesheet" />
 
     <!-- Tab icon -->
     <link rel="icon" href="./assets/images/favicontab.png" />
@@ -160,59 +161,65 @@
       <div class="container my-4">
         <h1 class="my-4">B kategorija</h1>
         <br />
-        <p class="h4">
+        <p class="h4" data-aos="fade-right">
           B kategorija smatraju se motorna vozila cija masa nije veća od 3500
           kg, i koja nemaju više od 8 mesta za sedenje, ne računajući sedište
           vozača.
         </p>
         <br />
-        <div class="d-flex">
-          <i class="material-icons"> help </i>
-          <p class="ml-2 h5">Uslovi za upis B kategorije</p>
+        <div data-aos="fade-right">
+          <div class="d-flex">
+            <i class="material-icons"> help </i>
+            <p class="ml-2 h5">Uslovi za upis B kategorije</p>
+          </div>
+          <ul>
+            <li>Da je kandidat navršio 16 godina za početak obuke</li>
+            <li>Da poseduje važeću ličnu kartu</li>
+            <li>Da poseduje važeće l uverenje za vozača B kategorije</li>
+          </ul>
+          <p>
+            Za prijavu praktičnog ispita neophodno je da kandidat ima zavrsenu
+            obuku i položen ispit iz prve pomoći. Polaganje vozačkog ispita i
+            dobijanje vozacke dozvole je moguće tek sa napunjenih 17 godina.
+          </p>
         </div>
-        <ul>
-          <li>Da je kandidat navršio 16 godina za početak obuke</li>
-          <li>Da poseduje važeću ličnu kartu</li>
-          <li>Da poseduje važeće l uverenje za vozača B kategorije</li>
-        </ul>
-        <p>
-          Za prijavu praktičnog ispita neophodno je da kandidat ima zavrsenu
-          obuku i položen ispit iz prve pomoći. Polaganje vozačkog ispita i
-          dobijanje vozacke dozvole je moguće tek sa napunjenih 17 godina.
-        </p>
         <br />
-        <div class="d-flex">
-          <i class="material-icons"> help </i>
-          <p class="ml-2 h5">Obuka vozača B kategorije</p>
+        <div data-aos="fade-right">
+          <div class="d-flex">
+            <i class="material-icons"> help </i>
+            <p class="ml-2 h5">Obuka vozača B kategorije</p>
+          </div>
+          <p>
+            Obuka B kategorije se sastoji od 40 casova teorijske i 40 casova
+            praktične obuke. Teorijska obuka B kategorije je obavezna i kandidat
+            mora biti prisutan na svim časovima teorijske nastave. Kandidat
+            dnevno može imati najviše tri časa teorije. Nastava i polaganje
+            teorijskog ispita za B kategoriju se obavlja u prostorijama auto
+            skole. Kandidat dnevno može imati maksimalno dva časa praktične
+            obuke B kategorije. Najkraci rok za koji se moze zavrsiti obuka B
+            kategorije je 2 meseca. Časovi se prilagodjavaju slobodnom vremenu
+            kandidata, instruktori su na raspolaganju od 7-22 h.
+          </p>
         </div>
-        <p>
-          Obuka B kategorije se sastoji od 40 casova teorijske i 40 casova
-          praktične obuke. Teorijska obuka B kategorije je obavezna i kandidat
-          mora biti prisutan na svim časovima teorijske nastave. Kandidat dnevno
-          može imati najviše tri časa teorije. Nastava i polaganje teorijskog
-          ispita za B kategoriju se obavlja u prostorijama auto skole. Kandidat
-          dnevno može imati maksimalno dva časa praktične obuke B kategorije.
-          Najkraci rok za koji se moze zavrsiti obuka B kategorije je 2 meseca.
-          Časovi se prilagodjavaju slobodnom vremenu kandidata, instruktori su
-          na raspolaganju od 7-22 h.
-        </p>
         <br />
-        <div class="d-flex">
-          <i class="material-icons"> help </i>
-          <p class="ml-2 h5">Praktičan ispit B kategorije</p>
+        <div data-aos="fade-right">
+          <div class="d-flex">
+            <i class="material-icons"> help </i>
+            <p class="ml-2 h5">Praktičan ispit B kategorije</p>
+          </div>
+          <p>
+            Praktičan ispit B kategorije se sastoji iz poligonskih vežbi (na
+            uređenom parkingu) i vožnjom u saobraćaju. Kandidat slučajnim
+            izborom bira jedan od 15 ispitnih zadataka. Nakon toga sledi
+            ocenjivanje njegovih vozačkih sposobnosti. Ispitnu komisiju čine dva
+            ispitivača, jedan je ispitivač MUP-a a drugi je ispitivač iz auto
+            skole. Ukoliko jedan od ispitivača oceni negativnom ocenom kandidata
+            NIJE POLOŽIO a drugi ispitivač da prolaznu ocenu POLOŽIO kandidat po
+            pravilniku dobija konačnu ocenu NIJE POLOŽIO. Ukoliko kandidat kod
+            oba ispitivača na kraju ispita dobije prolaznu ocenu POLOŽIO ispit
+            je uspešno završen.
+          </p>
         </div>
-        <p>
-          Praktičan ispit B kategorije se sastoji iz poligonskih vežbi (na
-          uređenom parkingu) i vožnjom u saobraćaju. Kandidat slučajnim izborom
-          bira jedan od 15 ispitnih zadataka. Nakon toga sledi ocenjivanje
-          njegovih vozačkih sposobnosti. Ispitnu komisiju čine dva ispitivača,
-          jedan je ispitivač MUP-a a drugi je ispitivač iz auto skole. Ukoliko
-          jedan od ispitivača oceni negativnom ocenom kandidata NIJE POLOŽIO a
-          drugi ispitivač da prolaznu ocenu POLOŽIO kandidat po pravilniku
-          dobija konačnu ocenu NIJE POLOŽIO. Ukoliko kandidat kod oba ispitivača
-          na kraju ispita dobije prolaznu ocenu POLOŽIO ispit je uspešno
-          završen.
-        </p>
       </div>
 
       <!-- Footer -->
@@ -292,10 +299,12 @@
     <script src="./js/jquery-3.2.1.slim.min.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap-material-design.js"></script>
+    <script src="./js/aos.js"></script>
     <script>
       $(document).ready(function() {
         $("body").bootstrapMaterialDesign();
       });
+      AOS.init();
     </script>
   </body>
 </html>
