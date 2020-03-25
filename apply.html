@@ -9,6 +9,7 @@
 
     <!-- CSS load -->
     <link rel="stylesheet" href="./css/bootstrap-material-design.min.css" />
+    <link href="./css/aos.css" rel="stylesheet" />
 
     <!-- Tab icon -->
     <link rel="icon" href="./assets/images/favicontab.png" />
@@ -88,17 +89,17 @@
     </nav>
     <main>
       <div class="container my-4 text-center">
-        <p class="h1">
+        <p class="h1" data-aos="fade-up">
           Upiši se u auto školu ovde i sada
         </p>
         <br />
-        <p class="h5">
+        <p class="h5" data-aos="fade-up">
           Upis možete izvršiti i online bez odlaska u prostorije auto škole.
           Popunite formular ispod, a mi ćemo Vas u najkraćem roku kontaktirati
           oko detaljnijih informacija o početku Vaše obuke.
         </p>
         <br />
-        <p class="mt-3">
+        <p class="mt-3" data-aos="fade-up">
           <i
             class="material-icons mr-2"
             style="font-size: 2em; vertical-align: middle;"
@@ -109,6 +110,7 @@
           ličnom kartom.
         </p>
         <iframe
+          data-aos="fade-up"
           src="https://docs.google.com/forms/d/e/1FAIpQLScjIVcee9UV-t2Hqr5N3u_OJNoyCJ9gLioq7X3zEXUxUXgLrA/viewform?embedded=true"
           width="640"
           class="w-100"
@@ -197,10 +199,12 @@
     <script src="./js/jquery-3.2.1.slim.min.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap-material-design.js"></script>
+    <script src="./js/aos.js"></script>
     <script>
       $(document).ready(function() {
         $("body").bootstrapMaterialDesign();
       });
+      AOS.init();
     </script>
   </body>
 </html>
