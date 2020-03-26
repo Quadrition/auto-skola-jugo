@@ -32,3 +32,20 @@ function increment() {
     a = 1;
   }
 }
+
+$(window).scroll(function() {
+  if ($(window).width() > 768) {
+    var distance = $("#main-feature").offset().top - $(".navbar").height(),
+      $window = $(window);
+    if ($window.scrollTop() >= distance) {
+      $("#main-feature").css(
+        "opacity",
+        1 - ($(window).scrollTop() - distance) / 250
+      );
+    } else {
+      $("#main-feature").css("opacity", 1);
+    }
+  } else {
+    $("#main-feature").css("opacity", 1);
+  }
+});
