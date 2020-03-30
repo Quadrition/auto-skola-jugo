@@ -26,7 +26,7 @@
     <!-- Navigation bar -->
     <nav
       class="navbar navbar-expand-lg sticky-top navbar-dark"
-      style="background-color: #114B9C;"
+      style="background-color: #114B9C; z-index: 10;"
     >
       <a class="navbar-brand" href="index.html">
         <img src="./assets/images/favicon.png" alt="" width="50" height="50" />
@@ -92,7 +92,11 @@
     <!-- Start of main content -->
     <main>
       <!-- Slide show -->
-      <div id="carouselSlideShow" class="carousel slide" data-ride="carousel">
+      <div
+        id="carouselSlideShow"
+        class="carousel slide carousel-fade"
+        data-ride="carousel"
+      >
         <ol class="carousel-indicators" style="z-index: 10;">
           <li
             data-target="#carouselSlideShow"
@@ -106,11 +110,22 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="./assets/images/car1.jpeg"
-              style="height: 24rem; object-fit: cover; object-position: 60% 82%;"
+              src="./assets/images/car1-edge-blur.png"
+              class="d-none d-lg-block"
+              style="z-index: 5; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); width: 992px !important; height: 24rem; object-fit: cover; object-position: 60% 80%;"
               alt=""
-              class="w-100"
             />
+            <img
+              src="./assets/images/car1.jpeg"
+              class="d-block d-lg-none w-100"
+              style="z-index: 5; position: absolute; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); height: 24rem; object-fit: cover; object-position: 60% 80%;"
+              alt=""
+            />
+
+            <div
+              class="w-100"
+              style="z-index: 1;height: 24rem; background-image: url(./assets/images/car1-blured.jpg); background-size: cover; background-position: 60% 80%;"
+            ></div>
           </div>
           <div class="carousel-item">
             <img
