@@ -1,6 +1,6 @@
 # Auto škola Jugo
 A site for car school giving info about attending it. The site was made as my first web project for learning basics of html, css and javascript, as well as for commercial purposes.  
-Possible typo errors (text was mostly copy-pasted).
+Possible typo errors (text was mostly copy-pasted).  
 Hosted with github pages: https://quadrition.github.io/auto-skola-jugo/
 
 ## Styling
